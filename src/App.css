@@ -1,0 +1,96 @@
+body {
+  background-color: #1A2130;
+  color: #aaa;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.App {
+  text-align: center;
+  background-color: #708871;
+  border: 2px solid #838383;
+  border-radius: 4px;
+  width: 400px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.todo-create {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.todo-create .input {
+  margin-right: 10px;
+}
+
+.todo-create .input input {
+  border-radius: 3px;
+  width: 300px;
+  height: 30px;
+  padding: 5px;
+  border: 1px solid #ccc;
+}
+
+.todo-create .btn button {
+  width: 70px;
+  height: 30px;
+  border-radius: 3px;
+  font-weight: 300;
+  color: #fff;
+  background-color: #606676;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.todo-create .btn button:hover {
+  background-color: #505863;
+}
+
+.todo-list {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.todo {
+  display: flex;
+  background-color: #838383;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  border: 1px solid lightgray;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+.todo.completed .content {
+  text-decoration: line-through; /* Tamamlanmışsa üstü çizili */
+  color: #ccc;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  color: #1A2130;
+}
+
+.icons .remove,
+.icons .checkbox {
+  cursor: pointer; /* İkonlar tıklanabilir */
+  margin-left: 10px;
+}
+
+.todo .content {
+  flex: 1; /* İçeriğin genişlemesi */
+  margin-left: 10px;
+}
+
+.icons .remove:hover{
+  color: #ff4d4d;
+}
